@@ -1,0 +1,288 @@
+.qqBox{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+.BoxHead {
+    width: 100%;
+    height: 52px;
+    background: #DA2339;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+.headImg{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin:0 10px;
+}
+.headImg img{
+	width: 100%;
+	height: 100%;
+	border-radius:50%;
+}
+.internetName{
+	width: auto;
+	height: 52px;
+	line-height: 52px;
+	color: white;
+}
+.context{
+-webkit-box-flex: 1;
+display: -webkit-box;
+-webkit-box-orient: horizontal;
+}
+.conLeft {
+    width: 250px;
+    overflow: auto;
+    background: #fff;
+    border-right: 10px solid #FAFAFA;
+}
+.conLeft::-webkit-scrollbar{
+	width: 0;
+}
+.conLeft ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.conLeft li{
+	width: 100%;
+	height: 62px;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+    .conLeft li .liLeft {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.liLeft img{
+	height:50px;
+    width:auto;
+}
+.liRight span{
+	display:block;
+	font-size: 16px;
+	overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.liRight span:last-child{
+	font-size: 14px;
+	color: #767676;
+	line-height:15px;
+	overflow: hidden;
+}
+.conRight{
+	-webkit-box-flex: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+.Righthead{
+	width: 100%;
+	height: 42px;
+	border-bottom: 1px solid #ccc;
+}
+.headName{
+	width: auto;
+	height: 100%;
+	line-height: 42px;
+	margin-left: 20px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	float: left;
+}
+.headConfig{
+	width: 20%;
+	float: right;
+	height: 100%;
+	
+}
+.headConfig ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+.headConfig li{
+	margin:10px 5px;
+}
+.RightCont{
+	-webkit-box-flex: 1;
+	overflow-y: scroll;
+}
+
+.RightCont::-webkit-scrollbar{
+	width: 15px;
+}
+.RightCont ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.RightCont li{
+	width: 100%;
+	height: 50px;
+	/*display: -webkit-box;*/
+	/*-webkit-box-orient: horizontal;*/
+	margin-top: 20px;
+}
+.nesHead{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin-left:15px ;
+	float: right;
+}
+.nesHead img{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+}
+.news {
+    width: auto;
+    height: auto;
+    background: #FDE7E9;
+    padding: 10px 20px;
+    margin: 4px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    float: right;
+    color: #635C5B;
+    max-width: 350px;
+}
+.news .jiao{
+	position: absolute;
+	right: -8px;
+	top: 10px;
+}
+ .news .Expr{
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+.answerHead{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin-left:15px ;
+	float: left;
+}
+.answerHead img{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+}
+.answers{
+	width: auto;
+	height: 30px;
+	background: #eeeeee;
+	padding:5px 20px;
+	margin: 4px;
+	line-height: 30px;
+	font-size: 14px;
+	border-radius:10px;
+	margin-left: 10px;
+	position: relative;
+	float: left;
+}
+.answers .jiao{
+	position: absolute;
+	left: -8px;
+	top: 10px;
+}
+.RightFoot {
+    /*width: 100%;
+	height: 118px;
+	border-top: 1px solid #ccc;
+	position: relative;*/
+    width: 100%;
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 220px;
+}
+.emjon{
+	width: 360px;
+	height: 200px;
+	border: 1px solid #ccc;
+	position: absolute;
+	left:0;
+	top:-200px;
+	background: #fff;
+	overflow: auto;
+}
+.emjon ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+	
+}
+.emjon ul li{
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	float: left;
+	
+}
+.emjon ul li:hover{
+box-shadow:5px 5px 5px #888888;
+transform: scale(1.2);
+	
+}
+.emjon ul li img{
+	width: 100%;
+	height: 100%;
+	
+}
+.footTop{
+	width: 100%;
+	height: auto;
+}
+.footTop ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+.footTop li{
+	margin: 5px 10px;
+}
+.sendBtn {
+    width: 68px;
+    height: 25px;
+    background: #DA2339;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+}
+.bg{
+	background: #ebebec;
+}
+.ChatRecord{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: deepskyblue;
+	cursor: pointer;
+	display: none;
+}

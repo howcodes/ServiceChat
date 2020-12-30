@@ -1,0 +1,120 @@
+[
+    {
+        "Answer": "你好,您好，hello，hi",
+        "DisplayOrder": 0,
+        "Id": 1,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "您好，很高兴为您服务！请问有什么可以为您效劳？",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "如何？",
+        "DisplayOrder": 1,
+        "Id": 2,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "亲，可以具体点提问噢！<br />（1）如何下单？<br />（2）如何操作提货?<br />（3）如何操作退款？<br />（4）...",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "欢迎语",
+        "DisplayOrder": 1,
+        "Id": 3,
+        "IsParent": 1,
+        "ParentId": 0,
+        "Reply": "您好，欢迎进入在线客服咨询，请点击您需要咨询的问题我们会及时给您回复哦，谢谢！",
+        "ReplyLink": [
+            {
+                "Answer": "如何操作退款？",
+                "DisplayOrder": 1,
+                "Id": 4,
+                "IsParent": 0,
+                "ParentId": 3,
+                "Reply": "亲，您可按以下方式进行申请退款的：<br />（1）在微信申请退款：进入商城首页，点击个人中心--我的订单--查看所有--找到对应的订单--申请退款，按要求操作后，客服将在3天内为您处理退款；<br />（2）到门店申请退款，店员将协助您后台处理。",
+                "ReplyLink": null
+            },
+            {
+                "Answer": "如何操作提货？",
+                "DisplayOrder": 1,
+                "Id": 5,
+                "IsParent": 0,
+                "ParentId": 3,
+                "Reply": "亲，提货方式是根据您下单时所选途径决定哦：<br />（1）到店自提：请凭提货短信到您选择的提货门店进行提取；如您没有收到短信，请到提货门店提供下单的姓名及手机号待门店核实后提取。<br />（2）快递配送：快递会根据您的下单地址进行配送哦，请您耐心等待。（仅限药急送商城）<br />温馨提示：目前仅有肇庆地区开通同城速送的配送方式，其他地区暂未开通，我们会继续努力哒，敬请期待哦~",
+                "ReplyLink": null
+            }
+        ]
+    },
+    {
+        "Answer": "你是谁发明的",
+        "DisplayOrder": 0,
+        "Id": 6,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "当然是烈阳发明的。",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "今天天气怎么样",
+        "DisplayOrder": 0,
+        "Id": 8,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "这里很热，你们那呢？",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "你是谁发明的",
+        "DisplayOrder": 0,
+        "Id": 9,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "当然是烈阳发明的。",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "我喜欢你",
+        "DisplayOrder": 0,
+        "Id": 10,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "喜欢就好！",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "谢谢,thank you,多谢,唔该晒",
+        "DisplayOrder": 0,
+        "Id": 11,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "不客气！",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "你是？",
+        "DisplayOrder": 0,
+        "Id": 12,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "我是机器人小智呀，你忘了我吗？",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "你是男的女的",
+        "DisplayOrder": 0,
+        "Id": 13,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "萌妹子一枚哟",
+        "ReplyLink": null
+    },
+    {
+        "Answer": "在不在",
+        "DisplayOrder": 0,
+        "Id": 14,
+        "IsParent": 0,
+        "ParentId": 0,
+        "Reply": "只要你需要，我无处不在",
+        "ReplyLink": null
+    }
+]

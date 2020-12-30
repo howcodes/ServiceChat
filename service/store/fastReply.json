@@ -1,0 +1,64 @@
+[{
+    "Title": "欢迎语",
+    "IsParent": 1,
+    "ParentId": 0,
+    "SourceSettingId": 0,
+    "MiniKey": null,
+    "State": 0,
+    "OutTrade": null,
+    "SonItem": [{
+      "Title": "你好，很高兴为您服务，请问有什么可以帮您的？",
+      "IsParent": 0,
+      "ParentId": 61,
+      "SourceSettingId": 0,
+      "MiniKey": null,
+      "State": 0,
+      "OutTrade": null,
+      "SonItem": null,
+      "Id": 115
+    }],
+    "Id": 61
+  },
+  {
+    "Title": "投诉",
+    "IsParent": 1,
+    "ParentId": 0,
+    "SourceSettingId": 0,
+    "MiniKey": null,
+    "State": 0,
+    "OutTrade": null,
+    "SonItem": [{
+      "Title": "请问发生了什么不愉快的事情呢？麻烦提供下您的会员卡（或手机号码）并详细描述下事情发生的经过，谢谢！",
+      "IsParent": 0,
+      "ParentId": 414,
+      "SourceSettingId": 0,
+      "MiniKey": null,
+      "State": 0,
+      "OutTrade": null,
+      "SonItem": null,
+      "Id": 441
+    }],
+    "Id": 414
+  },
+  {
+    "Title": "反馈",
+    "IsParent": 1,
+    "ParentId": 0,
+    "SourceSettingId": 0,
+    "MiniKey": null,
+    "State": 0,
+    "OutTrade": null,
+    "SonItem": [{
+      "Title": "给你造成不好的体验，真的非常抱歉，已为您记录并反馈相关门店核实后回复您，请留意保持电话畅通，谢谢",
+      "IsParent": 0,
+      "ParentId": 468,
+      "SourceSettingId": 0,
+      "MiniKey": null,
+      "State": 0,
+      "OutTrade": null,
+      "SonItem": null,
+      "Id": 495
+    }],
+    "Id": 468
+  }
+]

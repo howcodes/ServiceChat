@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "小陈",
+        "isService": 1,
+        "source": "网页",
+        "nickName": "",
+        "mobile": "1320245621X",
+        "cardNo": "BJ1320245621X",
+        "receptNum": 1,
+        "state": 0
+    },
+    {
+        "id": 2,
+        "name": "小红",
+        "isService": 1,
+        "source": "网页",
+        "nickName": "",
+        "mobile": "1320245621X",
+        "cardNo": "BJ1320245621X",
+        "receptNum": 10,
+        "state": 0
+    },
+    {
+        "id": 3,
+        "name": "老王",
+        "isService": 0,
+        "source": "小程序",
+        "nickName": "不是隔壁老王",
+        "mobile": "1320245621X",
+        "cardNo": "BJ1320245621X",
+        "receptNum": 0,
+        "state": 0
+    },
+    {
+        "id": 4,
+        "name": "老张",
+        "isService": 0,
+        "source": "网页",
+        "nickName": "亲爱的小张",
+        "mobile": "1320245621X",
+        "cardNo": "BJ1320245621X",
+        "receptNum": 0,
+        "state": 0
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "CreateTime": "2020-11-07 02:05:39",
+        "CustomerId": 3,
+        "Id": 2,
+        "Message": "没事我就是想召唤下你",
+        "Reply": null,
+        "SolverId": 0,
+        "SolverName": null,
+        "State": 0,
+        "Title": "老王的留言"
+    },
+    {
+        "CreateTime": "2020-11-07 02:01:39",
+        "CustomerId": 3,
+        "Id": 1,
+        "Message": "召唤客服大大",
+        "Reply": "来啦来啦，有什么事能帮助您",
+        "SolverId": 0,
+        "SolverName": "小陈",
+        "State": 3,
+        "Title": "老王的留言"
+    }
+]
