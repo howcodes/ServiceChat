@@ -1604,6 +1604,7 @@ export default {
     });
   },
   methods: {
+    //初始化
     init() {
       this.sender.id = parseInt(this.$route.query.sendId);
       let product = this.$store.state.productList.filter(
@@ -1709,6 +1710,9 @@ export default {
       if (type === 0 && content.length <= 0) {
         this.showMsg("请输入发送内容");
         return;
+      }
+      if (type === 2) {
+        this.expressionShow = !this.expressionShow;
       }
       this.signalrService(content, identity, type);
     },
