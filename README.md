@@ -1,42 +1,41 @@
-# ZZ-chatRoom
+# hsh-serviceChat
 
-### 聊天室功能介绍
+### 客服功能介绍
 
- - 对聊天室内当前在线人数进行统计
- - 新用户加入聊天室会有提示说明
- - 用户退出聊天室会有提示说明
- - 文件上传功能
- - 显示用户在线列表
- - 截图功能
- - 发表情功能
- - 图片的大图预览功能
- - 回车发送信息
+- 机器人智能聊天
+- 客服手动在线离线
+- 用户主动向客服发送信息（信息包括文本、表情包）
+- 客服选择会话成员，并且主动向用户发送信息（信息包括文本、表情包）
+- 用户/客服接收到对方发送的信息
+- 客服主动关闭用户会话，离线列表显示离线用户，用户端提示客服主动关闭会话，本次会话结束
+- 客服手动离线，清除所有会话列表，用户端提示客服已离线，本次会话结束
+- 客服刷新或关闭页面下线，清除所有会话列表，用户端提示客服已离线，本次会话结束
+- 用户刷新页面或关闭页面，客服端提示用户已下线，本次会话结束
+- 客服切换右边工具栏，选择快捷回复，可选中快捷回复信息以此快速回复内容
+- 发送信息，如果服务器中断，信息状态为 0（未发送出），若 20 秒服务器仍为断开，信息状态改成-1（发送失败），若 20 秒内服务器恢复，信息状态改成 1（发送成功）
+- 在用户端加入 productId，用户可发送商品卡片
+- 客服接收用户发送的商品卡片，并且查看详情
+- 完成图片发送，若图片过大时进行图片压缩，图片超大时不允许发送
+- 完成图片接收，查看
+- 用户多台设备在线时，强制另一台设备下线
+- 客服多台设备在线时，强制旧客服端下线，并且中断会员的会话
 
-部分功能实现：[https://blog.csdn.net/weixin_43950643/article/details/107923433](https://blog.csdn.net/weixin_43950643/article/details/107923433)
+部分功能实现：https://blog.csdn.net/weixin_42000816/article/details/112131388
 
-项目预览地址：[http://47.107.149.243/chatroom](http://47.107.149.243/chatroom)
+如果对您对此项目有兴趣，可以点 “Star” 支持一下 谢谢！
 
-如果对您对此项目有兴趣，可以点 “Star” 支持一下 谢谢！ 
+如果有任何的疑惑或建议，请在评论中提出，欢迎评论！
 
-如有问题请直接在评论中提出，或者您发现问题并有非常好的解决方案，欢迎评论
+前端(chatroom 文件)运行：
 
-前端(chatroom文件)运行：
 ```javascript
 npm install
 npm  run serve
 ```
-后端(service文件)运行：
+
+后端(service 文件)运行：
+
 ```javascript
+npm install
 node app.js
 ```
-### 截图如下：
-登录：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200812150953523.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk1MDY0Mw==,size_16,color_FFFFFF,t_70#pic_center)
-聊天发表情：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200812151042541.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk1MDY0Mw==,size_16,color_FFFFFF,t_70#pic_center)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200812151344242.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk1MDY0Mw==,size_16,color_FFFFFF,t_70#pic_center)
-
-发送图片和截图功能：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200812151127955.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk1MDY0Mw==,size_16,color_FFFFFF,t_70#pic_center)
-预览功能：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200812151144189.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk1MDY0Mw==,size_16,color_FFFFFF,t_70#pic_center)
