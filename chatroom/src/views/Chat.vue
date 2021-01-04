@@ -1607,6 +1607,10 @@ export default {
     //初始化
     init() {
       this.sender.id = parseInt(this.$route.query.sendId);
+      if (!(this.sender.id > 0)) {
+        alert("请添加sendId参数");
+        return false;
+      }
       let product = this.$store.state.productList.filter(
         (x) => x.Id == this.$route.query.productId
       );
@@ -1622,11 +1626,16 @@ export default {
         (x) => x.id == this.sender.id
       )[0];
       this.fastReplay = this.$store.state.fastReply;
-      this.sender.name = userInfo.name;
-      this.temporaryUserName = userInfo.name; //修改昵称时的临时记录昵称
-      this.sender.isService = userInfo.isService;
-      this.sender.receptNum = userInfo.receptNum;
-      this.temporaryReceptNumber = userInfo.receptNum; //修改接待用户数量时的临时记录接待用户数量
+      if (userInfo) {
+        this.sender.name = userInfo.name;
+        this.temporaryUserName = userInfo.name; //修改昵称时的临时记录昵称
+        this.sender.isService = userInfo.isService;
+        this.sender.receptNum = userInfo.receptNum;
+        this.temporaryReceptNumber = userInfo.receptNum; //修改接待用户数量时的临时记录接待用户数量
+      } else {
+        alert("请保证sendId参数在userList.json文件中存在");
+        return false;
+      }
       //发送欢迎语
       let welCome = this.$store.state.robotReply.filter(
         (x) => x.Answer.indexOf("欢迎语") !== -1
@@ -1711,24 +1720,29 @@ export default {
         this.showMsg("请输入发送内容");
         return;
       }
-      if (type === 2) {
+      if (type === 2 && this.sender.isService) {
         this.expressionShow = !this.expressionShow;
       }
       this.signalrService(content, identity, type);
     },
     //1.信息组装
-    signalrService(content, identity, type, isSendOther = true) {
-      console.log(this.sendState);
+    signalrService(
+      content,
+      identity,
+      type,
+      isSendOther = true,
+      isRobot = false
+    ) {
       if (this.sendState) {
         let createDate = this.nowTime();
         let noCode = +new Date();
         this.infoTemplate = {
           SendId: this.sender.id,
-          ReviceId: this.revicer.id,
+          ReviceId: isRobot ? 0 : this.revicer.id,
           Content: content,
           Identity: identity,
           Type: type,
-          State: this.sender.onlineState ? 0 : 1,
+          State: isRobot || !this.sender.onlineState ? 1 : 0,
           NoCode: noCode,
           OutTradeNo: this.revicer.outTradeNo,
           CreateDateUtc: createDate,
@@ -1740,7 +1754,7 @@ export default {
         };
         this.toSendInfo(this.infoTemplate);
         if (isSendOther) this.sendMsg(this.infoTemplate);
-        this.sendState = this.sender.onlineState ? false : true;
+        this.sendState = isRobot || !this.sender.onlineState ? true : false;
         this.sendInfo = "";
         this.toBottom(100);
       } else {
@@ -1856,8 +1870,8 @@ export default {
     },
     //点击机器人链接
     linkReply(answer, reply) {
-      this.signalrService(answer, 2, 0, false);
-      this.signalrService(reply, 1, 0, false);
+      this.signalrService(answer, 2, 0, false, true);
+      this.signalrService(reply, 1, 0, false, true);
       this.toBottom(100);
     },
     //选中快捷回复
@@ -1996,6 +2010,7 @@ export default {
       var height = document.body.clientHeight;
       setTimeout(() => {
         var floatHeight = document.getElementById("floatDiv").offsetHeight;
+        console.log(height, floatHeight, height - floatHeight);
         document.getElementById("ChatContent").style.height =
           height - floatHeight + "px";
         this.toBottom(100);
