@@ -26,16 +26,16 @@
 
 如果有任何的疑惑或建议，请在评论中提出，欢迎评论！
 
-前端(chatroom 文件)运行：
-
-```javascript
-npm install
-npm  run serve
-```
-
 后端(service 文件)运行：
 
 ```javascript
 npm install
 node app.js
+```
+
+前端(chatroom 文件)运行：
+
+```javascript
+npm install
+npm  run serve
 ```
