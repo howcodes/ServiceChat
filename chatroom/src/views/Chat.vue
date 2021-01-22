@@ -906,6 +906,7 @@
                     <li v-for="(son, index2) in item.SonItem" :key="index2">
                       <p
                         class="sonTitle"
+                        :title="son.Title"
                         v-bind:data-id="son.Id"
                         v-on:click="selectReplay(son.Title)"
                       >
@@ -1755,7 +1756,7 @@ export default {
         this.toSendInfo(this.infoTemplate);
         if (isSendOther) this.sendMsg(this.infoTemplate);
         this.sendState = isRobot || !this.sender.onlineState ? true : false;
-        this.sendInfo = "";
+        this.sendInfo = type == 2 ? this.sendInfo : "";
         this.toBottom(100);
       } else {
         this.showMsg("发送太快啦，请稍后再试");
@@ -2010,7 +2011,6 @@ export default {
       var height = document.body.clientHeight;
       setTimeout(() => {
         var floatHeight = document.getElementById("floatDiv").offsetHeight;
-        console.log(height, floatHeight, height - floatHeight);
         document.getElementById("ChatContent").style.height =
           height - floatHeight + "px";
         this.toBottom(100);
